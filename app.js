@@ -42,7 +42,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 
-
 //Middleware 
 app.use(express.json());
 
@@ -67,9 +66,7 @@ app.use(function(req,res){
 });
 
 
-app.listen(process.env.PORT || 3000, 
-    () => console.log("Server is running..."));
-    
+app.listen(process.env.PORT);
 module.exports = app;
 
 
