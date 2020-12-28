@@ -3,16 +3,12 @@ var createError = require('http-errors');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 const app = express();
+const cors = require('cors') // เรียกใช้งาน core module
 var logger = require('morgan');
 var verify = require('./core/verify-request')
 var bodyParser = require('body-parser')
 
-//START DATABASE MONGO DB
-
-//Route
-
-
-
+app.use(cors()) 
 
 
 // parse application/x-www-form-urlencoded
@@ -21,14 +17,6 @@ var bodyParser = require('body-parser')
 // parse application/json
 app.use(bodyParser.json())
  
-app.use(function(req, res, next) {
-    res.header('Access-Control-Allow-Origin', "*");
-    res.header('Access-Control-Allow-Methods','GET,PUT,POST,DELETE');
-    res.header('Access-Control-Allow-Headers', 'Content-Type','token_secret');
-    next();
-}); 
-
-
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
