@@ -47,7 +47,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
 
 app.get('/',verify, (req, res, next) => {
-    res.status(200).json({"app":"this is api"})
+    res.status(200).json(req)
 });
 app.get('/data/',verify, (req, res, next) => {
     res.status(200).json([{"id":1,"name":"dev1"},{"id":2,"name":"dev2"},{"id":3,"name":"dev3"}])
