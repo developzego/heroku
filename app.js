@@ -24,7 +24,7 @@ app.use(bodyParser.json())
 app.use(function(req, res, next) {
     res.header('Access-Control-Allow-Origin', "*");
     res.header('Access-Control-Allow-Methods','GET,PUT,POST,DELETE');
-    res.header('Access-Control-Allow-Headers', 'Content-Type');
+    res.header('Access-Control-Allow-Headers', 'Content-Type','token_secret');
     next();
 }); 
 
@@ -52,11 +52,6 @@ app.get('/',verify, (req, res, next) => {
 app.get('/data/',verify, (req, res, next) => {
     res.status(200).json([{"id":1,"name":"dev1"},{"id":2,"name":"dev2"},{"id":3,"name":"dev3"}])
 });
-
-
-
-
-
 
 //The 404 Route (ALWAYS Keep this as the last route)
 app.get('*', function(req, res){
