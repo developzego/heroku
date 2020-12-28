@@ -42,6 +42,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 
+
 //Middleware 
 app.use(express.json());
 
