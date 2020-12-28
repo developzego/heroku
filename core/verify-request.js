@@ -5,12 +5,12 @@ module.exports = async (req,res,next) => {
    let req_secret = req.headers['token_secret']
    // 1 Empty
    if(!req_secret){
-      res.status(401).json({"err":"[401] token secret is empty"})   
+      res.status(401).json({"err":"[401] น้องแฮม token secret is empty"})   
       return
    }
    // 1 Mismatch   
    if(req_secret!==token_secret){
-      res.status(401).json({"err":"[401] token secret mismatch"})   
+      res.status(401).json({"err":"[401] น้องแฮม token secret mismatch"})   
       return
    }   
    next();
