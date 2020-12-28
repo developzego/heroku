@@ -42,10 +42,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 
-//Mapping Route
-app.get('/favicon.ico', (req, res) => res.status(204));
-app.get('/robots.txt', (req, res) => res.status(204));
-
 //Middleware 
 app.use(express.json());
 
