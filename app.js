@@ -36,7 +36,7 @@ app.use(express.json());
 
 app.post('/post',(req, res, next)=>{
 
-    res.json({result:"OK",body:JSON.parse(req.body)})
+    res.json({result:"OK",body:req.body})
 })
 app.get('/',verify, (req, res, next) => {
     res.status(200).json({"result":"สวัสดี น้องแฮม this is api"})
