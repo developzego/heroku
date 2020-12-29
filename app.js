@@ -23,10 +23,10 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
 app.use(logger('dev'));
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+// app.use(express.json());
+// app.use(express.urlencoded({ extended: false }));
+// app.use(cookieParser());
+// app.use(express.static(path.join(__dirname, 'public')));
 
 
 
@@ -34,6 +34,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 //Middleware 
 app.use(express.json());
 
+app.post('/post',(req, res, next)=>{
+    res.json({result:"OK",body:req.body})
+})
 app.get('/',verify, (req, res, next) => {
     res.status(200).json({"result":"สวัสดี น้องแฮม this is api"})
 });
