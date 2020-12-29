@@ -33,8 +33,8 @@ app.use(logger('dev'));
 app.use(express.json());
 
 app.post('/post',(req, res, next)=>{
-
-    res.json({result:"OK",body:req.body})
+    let o = JSON.parse(req.body)
+    res.json({result:"OK",body:o})
 })
 app.get('/',verify, (req, res, next) => {
     res.status(200).json({"result":"สวัสดี น้องแฮม this is api"})
