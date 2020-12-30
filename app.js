@@ -8,16 +8,17 @@ var logger = require('morgan');
 var verify = require('./core/verify-request')
 var bodyParser = require('body-parser')
 
-app.use(bodyParser.urlencoded());
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded());
+// in latest body-parser use like below.
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors()) 
-app.use(logger('dev'));
 
 //Middleware 
 app.use(express.json());
 
 app.post('/post',(req, res, next)=>{
-    
+
     res.json({result:"OK",body:req.body})
 })
 app.get('/',verify, (req, res, next) => {
