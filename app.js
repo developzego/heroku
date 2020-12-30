@@ -8,15 +8,9 @@ var logger = require('morgan');
 var verify = require('./core/verify-request')
 var bodyParser = require('body-parser')
 
+app.use(bodyParser.urlencoded());
+app.use(bodyParser.json());
 app.use(cors()) 
-
-
-// parse application/x-www-form-urlencoded
- app.use(bodyParser.urlencoded({ extended: false }))
- 
-// parse application/json
-app.use(bodyParser.json())
- 
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
