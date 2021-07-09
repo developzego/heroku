@@ -19,7 +19,12 @@ app.post('/post',(req, res, next)=>{
 app.get('/',verify, (req, res, next) => {
     res.status(200).json({"result":"สวัสดี น้องแฮม this is api"})
 });
-app.get('/data/',verify, (req, res, next) => {
+
+//app.get('/data/',verify, (req, res, next) => {
+//    res.status(200).json([{"id":1,"name":"dev1"},{"id":2,"name":"dev2"},{"id":3,"name":"dev3"}])
+//});
+
+app.get('/data/', (req, res, next) => {
     res.status(200).json([{"id":1,"name":"dev1"},{"id":2,"name":"dev2"},{"id":3,"name":"dev3"}])
 });
 
