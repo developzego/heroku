@@ -32,7 +32,7 @@ app.get('/data/', (req, res, next) => {
         {"documentNoteID":2,"documentNoteDescription":"2. เรื่องเงื่อนไขการยกเลิก","documentID":1}
          ];
     
-    let datas =[{"documentInfo":invoice[0],"documentNote":documentnote}];    
+    let datas ={"documentInfo":invoice[0],"documentNote":documentnote};    
     
     res.status(200).json(datas)
 });
