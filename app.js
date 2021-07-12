@@ -26,8 +26,13 @@ app.get('/',verify, (req, res, next) => {
 
 app.get('/data/', (req, res, next) => {
 
-    let invoice = [{"documentID":1,"documentNo":"QT201205-0001","documentRef":"INV210205-0001"}];
-    let datas =[{"document":invoice[0]}];    
+    let invoice = [{"documentID":1,"documentNo":"QT201205-0001","documentRef":"INV210205-0001","documentTemplateID":1}];
+    let documentnote = [
+        {"documentNoteID":1,"documentNoteDescription":"1. รายการทัวร์ข้างต้นรวมภาษีมูลค่าเพิ่ม 7% และหักภาษี ณ ที่จ่าย 3%","documentID":1},
+        {"documentNoteID":2,"documentNoteDescription":"2. เรื่องเงื่อนไขการยกเลิก","documentID":1}
+         ];
+    
+    let datas =[{"document":invoice[0],"documentNote":documentnote}];    
     
     res.status(200).json(datas)
 });
