@@ -24,7 +24,7 @@ app.get('/',verify, (req, res, next) => {
 //    res.status(200).json([{"id":1,"name":"dev1"},{"id":2,"name":"dev2"},{"id":3,"name":"dev3"}])
 //});
 
-app.get('/data/', (req, res, next) => {
+app.get('/data/',verify, (req, res, next) => {
 
     let invoice = [{"documentID":1,"documentNo":"QT201205-0001","documentRef":"INV210205-0001","documentTemplateID":1}];
     let documentnote = [
