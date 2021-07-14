@@ -26,15 +26,40 @@ app.get('/',verify, (req, res, next) => {
 
 app.get('/data/',verify, (req, res, next) => {
 
-    let invoice = [{"documentID":1,"documentNo":"QT201205-0001","documentRef":"INV210205-0001","documentTemplateID":1}];
-    let documentnote = [
-        {"documentNoteID":1,"documentNoteDescription":"1. รายการทัวร์ข้างต้นรวมภาษีมูลค่าเพิ่ม 7% และหักภาษี ณ ที่จ่าย 3%","documentID":1},
-        {"documentNoteID":2,"documentNoteDescription":"2. เรื่องเงื่อนไขการยกเลิก","documentID":1}
-         ];
+    let bookings = [
+        {
+            "bookingID":1,
+            "bookingNo":"BKC201205-0001",
+            "bookingDate":new Date(),
+            "documentTemplateCode":"BKG",
+            "documentTemplateID":1,
+            "documentTemplateTitleLocal":"เท็มเพลตทัวร์",
+            "documentTemplateTitleGlobal":"Template Tour",   
+            "documentID":1,
+            "documentCode":"QT",
+            "documentTitleLocal":"ใบจองทัวร์",
+            "documentTitleGlobal":"BOOKING CONFIRMATION",            
+            "documentABB":"QTA",
+            "documentCopyID":1,
+            "documentCopyTitleLocal":"ต้นฉบับ",
+            "documentCopyTitleLocal":"Original",        
+            "documentnote":[
+                                {
+                                    "documentNoteID":1,
+                                    "documentNoteDescription":"1. รายการทัวร์ข้างต้นรวมภาษีมูลค่าเพิ่ม 7% และหักภาษี ณ ที่จ่าย 3%",
+                                    "documentID":1
+                                },
+                                {
+                                    "documentNoteID":2,
+                                    "documentNoteDescription":"2. เรื่องเงื่อนไขการยกเลิก",
+                                    "documentID":1
+                                }
+                            ]
+        }
+        ];
+      
     
-    let datas ={"documentInfo":invoice[0],"documentNote":documentnote};    
-    
-    res.status(200).json(datas)
+    res.status(200).json(bookings)
 });
 
 app.get('/invoice/', (req, res, next) =>{
