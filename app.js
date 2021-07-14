@@ -24,6 +24,57 @@ app.get('/',verify, (req, res, next) => {
 //    res.status(200).json([{"id":1,"name":"dev1"},{"id":2,"name":"dev2"},{"id":3,"name":"dev3"}])
 //});
 
+var bookings = [
+        {
+            "bookingID":1,
+            "bookingNo":"BKC201205-0001",
+            "bookingStatus":1,
+            "bookingActive":1,
+            "bookingGuaranteeID":1,
+            "bookingType":"I",
+            "bookingRemark1":"",
+            "bookingRemark2":"",
+            "bookingCurrencyID":1,
+            "bookingCurrencyCode":"BHT",
+            "bookingCurrencyRate":1,
+            
+            "bookingDate":new Date(),
+            "bookingExpire":(new Date()).addDays(15),
+            "saleBy":2,
+            "saleName":"คุณพลอย",
+            "saleTel":"02-408-8001 #2005",
+            "saleEmail":"02-408-8001 #2005",
+            "documentTemplateCode":"BKG",
+            "documentTemplateID":1,
+            "documentTemplateTitleLocal":"เท็มเพลตทัวร์",
+            "documentTemplateTitleGlobal":"Template Tour",
+            "documentTemplateKeyRef":2,
+            "documentID":1,
+            "documentCode":"QT",
+            "documentTitleLocal":"ใบจองทัวร์",
+            "documentTitleGlobal":"BOOKING CONFIRMATION",            
+            "documentABB":"QTA",
+            "documentCopyID":1,
+            "documentCopyTitleLocal":"ต้นฉบับ",
+            "documentCopyTitleLocal":"Original",        
+            "documentnote":[
+                                {
+                                    "documentNoteID":1,
+                                    "documentNoteDescription":"1. รายการทัวร์ข้างต้นรวมภาษีมูลค่าเพิ่ม 7% และหักภาษี ณ ที่จ่าย 3%",
+                                    "documentID":1
+                                },
+                                {
+                                    "documentNoteID":2,
+                                    "documentNoteDescription":"2. เรื่องเงื่อนไขการยกเลิก",
+                                    "documentID":1
+                                }
+                            ]
+        }
+        ];
+
+
+
+
 app.get('/data/',verify, (req, res, next) => {
 
     let bookings = [
