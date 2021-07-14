@@ -24,6 +24,14 @@ app.get('/',verify, (req, res, next) => {
 //    res.status(200).json([{"id":1,"name":"dev1"},{"id":2,"name":"dev2"},{"id":3,"name":"dev3"}])
 //});
 
+//            "documentTemplateInfo":
+//                                    {
+//                                        "tourID":2,
+//                                        "tourCode":"ZCGD01",
+//                                        "tourName":"เลสโก จิ๋นซี ยกทัพ",
+//                                        "programeTourName":"จีน เจ้งโจว ซีอาน สั่วหยาง",
+//                                        "tourDay":5,
+//                                        "tourNight":6
 
 
 
@@ -53,15 +61,6 @@ let bookings = [
             "documentTemplateID":1,
             "documentTemplateTitleLocal":"เท็มเพลตทัวร์",
             "documentTemplateTitleGlobal":"Template Tour",
-            "documentTemplateInfo":
-                                    {
-                                        "tourID":2,
-                                        "tourCode":"ZCGD01",
-                                        "tourName":"เลสโก จิ๋นซี ยกทัพ",
-                                        "programeTourName":"จีน เจ้งโจว ซีอาน สั่วหยาง",
-                                        "tourDay":5,
-                                        "tourNight":6
-                                    },
             "documentID":1,
             "documentCode":"QT",
             "documentTitleLocal":"ใบจองทัวร์",
