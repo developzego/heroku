@@ -37,18 +37,26 @@ var bookings = [
             "bookingCurrencyID":1,
             "bookingCurrencyCode":"BHT",
             "bookingCurrencyRate":1,
-            
             "bookingDate":new Date(),
             "bookingExpire":(new Date()).addDays(15),
             "saleBy":2,
             "saleName":"คุณพลอย",
             "saleTel":"02-408-8001 #2005",
             "saleEmail":"02-408-8001 #2005",
+            "documentTemplateKeyRef":2,
             "documentTemplateCode":"BKG",
             "documentTemplateID":1,
             "documentTemplateTitleLocal":"เท็มเพลตทัวร์",
             "documentTemplateTitleGlobal":"Template Tour",
-            "documentTemplateKeyRef":2,
+            "documentTemplateInfo":
+                                    {
+                                        "tourID":2,
+                                        "tourCode":"ZCGD01",
+                                        "tourName":"เลสโก จิ๋นซี ยกทัพ",
+                                        "programeTourName":"จีน เจ้งโจว ซีอาน สั่วหยาง",
+                                        "tourDay":5,
+                                        "tourNight":6
+                                    },
             "documentID":1,
             "documentCode":"QT",
             "documentTitleLocal":"ใบจองทัวร์",
