@@ -85,38 +85,7 @@ var bookings = [
 
 app.get('/data/',verify, (req, res, next) => {
 
-    let bookings = [
-        {
-            "bookingID":1,
-            "bookingNo":"BKC201205-0001",
-            "bookingDate":new Date(),
-            "documentTemplateCode":"BKG",
-            "documentTemplateID":1,
-            "documentTemplateTitleLocal":"เท็มเพลตทัวร์",
-            "documentTemplateTitleGlobal":"Template Tour",   
-            "documentID":1,
-            "documentCode":"QT",
-            "documentTitleLocal":"ใบจองทัวร์",
-            "documentTitleGlobal":"BOOKING CONFIRMATION",            
-            "documentABB":"QTA",
-            "documentCopyID":1,
-            "documentCopyTitleLocal":"ต้นฉบับ",
-            "documentCopyTitleLocal":"Original",        
-            "documentnote":[
-                                {
-                                    "documentNoteID":1,
-                                    "documentNoteDescription":"1. รายการทัวร์ข้างต้นรวมภาษีมูลค่าเพิ่ม 7% และหักภาษี ณ ที่จ่าย 3%",
-                                    "documentID":1
-                                },
-                                {
-                                    "documentNoteID":2,
-                                    "documentNoteDescription":"2. เรื่องเงื่อนไขการยกเลิก",
-                                    "documentID":1
-                                }
-                            ]
-        }
-        ];
-      
+    
     
     res.status(200).json(bookings)
 });
