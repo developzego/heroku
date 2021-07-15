@@ -110,7 +110,7 @@ let bookings = [
                                     "documentNoteDescription":"2. เรื่องเงื่อนไขการยกเลิก",
                                     "documentID":1
                                 }
-                            ]
+                            ],
             "documentSignatureID":2,
             "documentSignatureDetails":[
                                         {   
