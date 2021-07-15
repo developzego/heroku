@@ -77,6 +77,33 @@ let bookings = [
             "periodStartDate":addDate(60),
             "periodEndDate":addDate(64),
             "periodStatus":"I",
+            "perioidCheckInDate":addDate(60),
+            "periodPlaceID":1,
+            "periodPlaceCode":"DMK",
+            "periodPlaceNameLocal":"สนามบินดอนเมือง",     
+            "periodPlaceNameGlobal":"DON MUEANG AIRPORT",
+            "flightDetails":[
+                                {
+                                    "flightRouteType":1,
+                                    "flightType":1,
+                                    "flightDate":addDate(1),
+                                    "flightNo":"XJ701",
+                                    "routeFrom":"DMK",
+                                    "routeTo":"CGD",
+                                    "departureTime":addDate(1),
+                                    "arrivalTime":addDate(1)
+                                },
+                                {
+                                    "flightRouteType":1,
+                                    "flightType":2,
+                                    "flightDate":addDate(1),
+                                    "flightNo":"XJ702",
+                                    "routeFrom":"CGD",
+                                    "routeTo":"DMK",
+                                    "departureTime":addDate(1),
+                                    "arrivalTime":addDate(1)
+                                }
+                            ],
             "bookingID":1,
             "bookingNo":"BKC201205-0001",
             "bookingStatus":1,
