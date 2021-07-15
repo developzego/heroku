@@ -49,6 +49,26 @@ app.get('/',verify, (req, res, next) => {
 app.get('/data/',verify, (req, res, next) => {
 let bookings = [
         {
+            "companyID":1,
+            "companyCode":"11/05844",
+            "companyNameLocal":"บริษัท ซีโก้ ทราเวล จำกัด (สำนักงานใหญ่)",
+            "companyNameGlobal":"ZEGO TRAVEL CO,.LTD.",
+            "companyTel":"02-408-8001 (60 คู่สาย)",
+            "companyFax":"02-070-6626-7",
+            "companyEmail":"info@zegotravel.com",
+            "companyAddressSec1Local":"22/7-9 ซ.นนทรี 10 ถ.นนทรี แขวงช่องนนทรี เขตยานนาวา กรุงเทพมหานคร 10120",
+            "companyAddressSec1Global":"22/7-9 Nonsri 10, Nonsri Rd., Chongnonsri, Yannawa, Bangkok 10120",
+            "companyTaxID":"0105552023586",
+            "branchID":1,
+            "branchCode":"11/05844",
+            "branchNameLocal":"บริษัท ซีโก้ ทราเวล จำกัด (สำนักงานใหญ่)",
+            "branchNameGlobal":"ZEGO TRAVEL CO,.LTD.",
+            "branchTel":"02-408-8001 (60 คู่สาย)",
+            "branchFax":"02-070-6626-7",
+            "branchEmail":"info@zegotravel.com",
+            "companyAddressSec1Local":"22/7-9 ซ.นนทรี 10 ถ.นนทรี แขวงช่องนนทรี เขตยานนาวา กรุงเทพมหานคร 10120",
+            "companyAddressSec1Global":"22/7-9 Nonsri 10, Nonsri Rd., Chongnonsri, Yannawa, Bangkok 10120",
+            "companyTaxID":"0105552023586",
             "bookingID":1,
             "bookingNo":"BKC201205-0001",
             "bookingStatus":1,
@@ -78,7 +98,7 @@ let bookings = [
             "documentABB":"QTA",
             "documentCopyID":1,
             "documentCopyTitleLocal":"ต้นฉบับ",
-            "documentCopyTitleLocal":"Original",  
+            "documentCopyTitleGlobal":"Original", 
             "documentnote":[
                                 {
                                     "documentNoteID":1,
@@ -91,6 +111,30 @@ let bookings = [
                                     "documentID":1
                                 }
                             ]
+            "documentSignatureID":2,
+            "documentSignatureDetails":[
+                                        {   
+                                            "signatureID":1,
+                                            "signatureSec1Local":"ผู้จัดทำ / Prepared by",
+                                            "signatureSec1Global":"ผู้จัดทำ / Prepared by",
+                                            "signatureSec2Local":"วันที่ / Date",
+                                            "signatureSec2Global":"วันที่ / Date"
+                                        },
+                                        {   
+                                            "signatureID":2,
+                                            "signatureSec1Local":"พนักงานขาย / Salesman",
+                                            "signatureSec1Global":"พนักงานขาย / Salesman",
+                                            "signatureSec2Local":"วันที่ / Date",
+                                            "signatureSec2Global":"วันที่ / Date"
+                                        },
+                                        {   
+                                            "signatureID":3,
+                                            "signatureSec1Local":"ลูกค้า / Cunsumer",
+                                            "signatureSec1Global":"ลูกค้า / Cunsumer",
+                                            "signatureSec2Local":"วันที่ / Date",
+                                            "signatureSec2Global":"วันที่ / Date"
+                                        }    
+                                      ]
         }
         ];
 
