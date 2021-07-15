@@ -16,6 +16,14 @@ app.post('/post',(req, res, next)=>{
     res.json({result:"OK",body:req.body})
 })
 
+
+
+function addDate(day){ 
+    let date = new Date()
+    return date.setDate(date.getDate() + day)
+}
+
+
 app.get('/',verify, (req, res, next) => {
     res.status(200).json({"result":"สวัสดี น้องแฮม this is api"})
 });
@@ -70,7 +78,7 @@ let bookings = [
             "bookingCurrencyCode":"BHT",
             "bookingCurrencyRate":1,
             "bookingDate":new Date(),
-            "bookingExpire":(new Date()).addDays(15),
+            "bookingExpire":addDate(5),
             "documentnote":[
                                 {
                                     "documentNoteID":1,
