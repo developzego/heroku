@@ -42,25 +42,7 @@ app.get('/',verify, (req, res, next) => {
 //                                        "tourDay":5,
 //                                        "tourNight":6
 
-//            "bookingDate":new Date(),
-//            "bookingExpire":(new Date()).addDays(15),
-//            "saleBy":2,
-//            "saleName":"คุณพลอย",
-//            "saleTel":"02-408-8001 #2005",
-//            "saleEmail":"02-408-8001 #2005",
-//            "documentTemplateKeyRef":2,
-//            "documentTemplateCode":"BKG",
-//            "documentTemplateID":1,
-//            "documentTemplateTitleLocal":"เท็มเพลตทัวร์",
-//            "documentTemplateTitleGlobal":"Template Tour",
-//            "documentID":1,
-//            "documentCode":"QT",
-//            "documentTitleLocal":"ใบจองทัวร์",
-//            "documentTitleGlobal":"BOOKING CONFIRMATION",            
-//            "documentABB":"QTA",
-//            "documentCopyID":1,
-//            "documentCopyTitleLocal":"ต้นฉบับ",
-//            "documentCopyTitleLocal":"Original",  
+
 
 
 
@@ -80,6 +62,23 @@ let bookings = [
             "bookingCurrencyRate":1,
             "bookingDate":new Date(),
             "bookingExpire":addDate(5),
+            "saleBy":2,
+            "saleName":"คุณพลอย",
+            "saleTel":"02-408-8001 #2005",
+            "saleEmail":"02-408-8001 #2005",
+            "documentTemplateKeyRef":2,
+            "documentTemplateCode":"BKG",
+            "documentTemplateID":1,
+            "documentTemplateTitleLocal":"เท็มเพลตทัวร์",
+            "documentTemplateTitleGlobal":"Template Tour",
+            "documentID":1,
+            "documentCode":"QT",
+            "documentTitleLocal":"ใบจองทัวร์",
+            "documentTitleGlobal":"BOOKING CONFIRMATION",            
+            "documentABB":"QTA",
+            "documentCopyID":1,
+            "documentCopyTitleLocal":"ต้นฉบับ",
+            "documentCopyTitleLocal":"Original",  
             "documentnote":[
                                 {
                                     "documentNoteID":1,
