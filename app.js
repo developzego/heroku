@@ -33,16 +33,6 @@ app.get('/',verify, (req, res, next) => {
 //    res.status(200).json([{"id":1,"name":"dev1"},{"id":2,"name":"dev2"},{"id":3,"name":"dev3"}])
 //});
 
-//            "documentTemplateInfo":
-//                                    {
-//                                        "tourID":2,
-//                                        "tourCode":"ZCGD01",
-//                                        "tourName":"เลสโก จิ๋นซี ยกทัพ",
-//                                        "programeTourName":"จีน เจ้งโจว ซีอาน สั่วหยาง",
-//                                        "tourDay":5,
-//                                        "tourNight":6
-
-
 
 
 
@@ -81,6 +71,7 @@ let bookings = [
             "tourName":"เลสโก จิ๋นซี ยกทัพ",
             "tourDay":5,
             "tourNight":6,
+            "projectCode":"CGO-191205A-WE0001",
             "periodID":110,
             "periodCode":"CGO-191205A-WE",
             "periodStartDate":addDate(60),
@@ -151,7 +142,36 @@ let bookings = [
                                             "signatureSec2Local":"วันที่ / Date",
                                             "signatureSec2Global":"วันที่ / Date"
                                         }    
-                                      ]
+                                      ],
+            "banks":[
+                {
+                    "bankID":2,
+                    "bankName":"กสิกรไทย",
+                    "bankIcon":"/var/images/banks/20190111.jpeg",
+                    "bankAccountNumber":"860-1-01987-7",
+                    "bankAccountName":"บจก. ซีโก้ ทราเวล จำกัด",
+                    "bankBranchID":12,
+                    "bankBranchName":"สาขา เทสโก้โลตัส พระราม 3"
+                },
+                {
+                    "bankID":3,
+                    "bankName":"ไทยพาณิชย์",
+                    "bankIcon":"/var/images/banks/20190112.jpeg",
+                    "bankAccountNumber":"212-2-59999-9",
+                    "bankAccountName":"บจก. ซีโก้ ทราเวล จำกัด",
+                    "bankBranchID":16,
+                    "bankBranchName":"สาขา เทสโก้โลตัส พระราม 3"
+                },
+                {
+                    "bankID":4,
+                    "bankName":"กรุงเทพ",
+                    "bankIcon":"/var/images/banks/201901125.jpeg",
+                    "bankAccountNumber":"949-0-32393-9",
+                    "bankAccountName":"บจก. ซีโก้ ทราเวล จำกัด",
+                    "bankBranchID":19,
+                    "bankBranchName":"สาขา เทสโก้โลตัส พระราม 3"
+                }
+            ]
         }
         ];
 
