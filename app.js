@@ -67,7 +67,15 @@ let bookings = [
         {
             "bookingID":1,
             "bookingNo":"BKC201205-0001",
-            "bookingStatus":1,      
+            "bookingStatus":1,
+            "bookingActive":1,
+            "bookingGuaranteeID":1,
+            "bookingType":"I",
+            "bookingRemark1":"",
+            "bookingRemark2":"",
+            "bookingCurrencyID":1.0000,
+            "bookingCurrencyCode":"BHT",
+            "bookingCurrencyRate":1,
             "documentnote":[
                                 {
                                     "documentNoteID":1,
