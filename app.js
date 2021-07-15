@@ -32,14 +32,7 @@ app.get('/',verify, (req, res, next) => {
 //                                        "programeTourName":"จีน เจ้งโจว ซีอาน สั่วหยาง",
 //                                        "tourDay":5,
 //                                        "tourNight":6
-//            "bookingActive":1,
-//            "bookingGuaranteeID":1,
-//            "bookingType":"I",
-//            "bookingRemark1":"",
-//            "bookingRemark2":"",
-//            "bookingCurrencyID":1,
-//            "bookingCurrencyCode":"BHT",
-//            "bookingCurrencyRate":1,
+
 //            "bookingDate":new Date(),
 //            "bookingExpire":(new Date()).addDays(15),
 //            "saleBy":2,
@@ -76,6 +69,8 @@ let bookings = [
             "bookingCurrencyID":1.0000,
             "bookingCurrencyCode":"BHT",
             "bookingCurrencyRate":1,
+            "bookingDate":new Date(),
+            "bookingExpire":(new Date()).addDays(15),
             "documentnote":[
                                 {
                                     "documentNoteID":1,
