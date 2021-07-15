@@ -20,7 +20,8 @@ app.post('/post',(req, res, next)=>{
 
 function addDate(day){ 
     let date = new Date()
-    return date.setDate(date.getDate() + day)
+    date.setDate(date.getDate() + day)
+    return date
 }
 
 
