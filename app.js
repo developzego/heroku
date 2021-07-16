@@ -17,7 +17,6 @@ app.post('/post',(req, res, next)=>{
 })
 
 
-
 function addDate(day){ 
     let date = new Date()
     date.setDate(date.getDate() + day)
@@ -126,6 +125,11 @@ let bookings = [
             "bookingDate":new Date(),
             "bookingExpire":addDate(5),
             "bookingRevise":0,
+            "bookingDownPaymentAmount":10000,
+            "bookingDownPaymentDate":addDate(5),
+            "bookingPaymentAmout":12500,
+            "bookingPaymentDate":addDate(1),
+            "bookingAmount":299988,
             "memberID":2,
             "memberNameLocal":"บริษัท เอ็กซ์แอล เวิลด์ ทัวร์ จำกัด",
             "memberNameGlobal":"บริษัท เอ็กซ์แอล เวิลด์ ทัวร์ จำกัด",
