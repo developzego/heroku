@@ -32,6 +32,27 @@ app.get('/',verify, (req, res, next) => {
 //    res.status(200).json([{"id":1,"name":"dev1"},{"id":2,"name":"dev2"},{"id":3,"name":"dev3"}])
 //});
 
+app.get('/producttemplate', (req, res, next) => {
+    let data=[
+        {
+            "productTemplateID":1,
+            "productTemplateCode":"BKG-00001",
+            "productTemplateType":"G",
+            "productTemplateUseStock":"N",
+            "productTemplateDetail":"ผู้ใหญ่พักห้องละ 2 ท่าน ท่านละ",
+            "productTemplateLabel":"ค่าทัวร์",
+            "productCodeEX":"ADL",
+            "productTemplateUnit":"คน"
+        },
+        {
+            "productTemplateID":2
+        },
+        {
+            "productTemplateID":3
+        }
+    ]
+    res.status(200).json({"result":"สวัสดี น้องแฮม this is api"})
+});
 
 
 
@@ -130,6 +151,28 @@ let bookings = [
             "bookingPaymentAmout":12500,
             "bookingPaymentDate":addDate(1),
             "bookingAmount":299988,
+            "bookingDetails":[
+                {   
+                    "itemType":"G",
+                    "itemTemplateCode":"BKG",
+                    "itemSec":1,
+                    "itemSecDetail":"ส่วนที่ 1 : None Vat",
+                    "itemSecUseVat":"NO",
+                    "itemSecUseVatPer":0,
+                    "itemID":9,
+                    "itemSeq":1,
+                    "itemSubSeq":0,
+                    "itemFreeSeq":0,
+                    "itemCode":"ADL",
+                    "itemDetail":"ค่าทัวร์ญี่ปุ่น ผู้ใหญ่",
+                    "itemQty":12,
+                    "itemUnit":"Pcs.",
+                    "itemUnitPrice":26999,
+                    "itemDisCal":"",
+                    "itemDisAmount":0,
+                    "itemAmount":323988                
+                }
+            ],
             "memberID":2,
             "memberNameLocal":"บริษัท เอ็กซ์แอล เวิลด์ ทัวร์ จำกัด",
             "memberNameGlobal":"บริษัท เอ็กซ์แอล เวิลด์ ทัวร์ จำกัด",
