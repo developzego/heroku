@@ -51,32 +51,40 @@ app.get('/subtypeofgoods',(req,res,next)=>{
         {
             "typeOfGoodsID":1,
             "typeOfGoodsCode":"I",
-            "typeOfGoodsLocalInfo":"สินค้าทั่วไป",
-            "typeOfGoodsLocalInfo":"สินค้าทั่วไป",
+            "typeOfGoodsLocalInfo":"สินค้าทั่วไป เหมาะกับ ทอง ของสมนาคุณ กิฟวอเช่อ อุปกรณ์สำนักงาน หรือของแถมต่าง ๆ",
+            "typeOfGoodsLocalInfo":"สินค้าทั่วไป เหมาะกับ ทอง ของสมนาคุณ กิฟวอเช่อ อุปกรณ์สำนักงาน หรือของแถมต่าง ๆ",
             "isActive":1,
             "isVisible":1
         },
         {
             "typeOfGoodsID":2,
-            "typeOfGoodsCode":"G",
-            "typeOfGoodsLocalInfo":"สินค้า/กรุ๊ป",
-            "typeOfGoodsLocalInfo":"สินค้า/กรุ๊ป",
+            "typeOfGoodsCode":"S",
+            "typeOfGoodsLocalInfo":"สินค้า/SET (สามารถนำเอาสินค้าอื่น ๆเข้าร่วมใน SET ได้เช่น ตั๋ว,แลนด์,บริการ เหมาะกับธุรกิจทัวร์)",
+            "typeOfGoodsLocalInfo":"สินค้า/SET (สามารถนำเอาสินค้าอื่น ๆเข้าร่วมใน SET ได้เช่น ตั๋ว,แลนด์,บริการ เหมาะกับธุรกิจทัวร์)",
             "isActive":1,
             "isVisible":1
-        },
+        },       
         {
             "typeOfGoodsID":3,
-            "typeOfGoodsCode":"L",
-            "typeOfGoodsLocalInfo":"สินค้า LOT",
-            "typeOfGoodsLocalInfo":"สินค้า LOT",
+            "typeOfGoodsCode":"G",
+            "typeOfGoodsLocalInfo":"สินค้า/กรุ๊ป เหมาะกับสินค้าประเภทแยกสี แยกลาย (เช่นเสื้อ POLO SIZE X 10 ตัว มีการแยกสีแดง 5 ตัว,ดำ 5 ตัว)",
+            "typeOfGoodsLocalInfo":"สินค้า/กรุ๊ป เหมาะกับสินค้าประเภทแยกสี แยกลาย (เช่นเสื้อ POLO SIZE X 10 ตัว มีการแยกสีแดง 5 ตัว,ดำ 5 ตัว)",
             "isActive":1,
             "isVisible":1
         },
         {
             "typeOfGoodsID":4,
-            "typeOfGoodsCode":"S",
-            "typeOfGoodsLocalInfo":"สินค้า SERIAL",
-            "typeOfGoodsLocalInfo":"สินค้า SERIAL",
+            "typeOfGoodsCode":"L",
+            "typeOfGoodsLocalInfo":"สินค้า LOT (เหมาะกับธุรกิจผลิตอุปกรณ์ (ยังไม่ได้ใช้)",
+            "typeOfGoodsLocalInfo":"สินค้า LOT (เหมาะกับธุรกิจผลิตอุปกรณ์ (ยังไม่ได้ใช้)" ,
+            "isActive":1,
+            "isVisible":1
+        },
+        {
+            "typeOfGoodsID":5,
+            "typeOfGoodsCode":"SN",
+            "typeOfGoodsLocalInfo":"สินค้า SERIAL NUMBER เหมาะกับธุรกิจผลิตเช่นที่รหัสกับกับชื่อผลิตภัณฑ์เหมือนกันแต่คนละ Serial number เช่นอุปกรณ์ไอที ,RAM,CPU",
+            "typeOfGoodsLocalInfo":"สินค้า SERIAL NUMBER เหมาะกับธุรกิจผลิตเช่นที่รหัสกับกับชื่อผลิตภัณฑ์เหมือนกันแต่คนละ Serial number เช่นอุปกรณ์ไอที ,RAM,CPU",
             "isActive":1,
             "isVisible":1
         }
