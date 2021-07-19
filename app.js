@@ -99,7 +99,7 @@ app.get('/',verify, (req, res, next) => {
 });
 
 
-appget('/'
+//appget('/'
 
 
 //app.get('/data/',verify, (req, res, next) => {
