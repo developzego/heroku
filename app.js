@@ -24,27 +24,30 @@ function addDate(day){
 }
 
 
-app.get('/goodsgroup',(req,res,next)=>{
-    let goodsgroups=[
+
+app.get('/categoryofgoods',(req,res,next)=>{
+    let cateofgoods=[
         {
-            "goodsGroupID":1,
-            "goodsGroupCode":"G",
-            "goodsGroupLocalInfo":"สินค้า",
-            "goodsGroupGlobalInfo":"Goods",   
+            "cateofgoodsID":1,
+            "cateofgoodsCode":"G",
+            "cateofgoodsLocalInfo":"สินค้า  ",
+            "cateofgoodsGlobalInfo":"Goods",   
             "isActive":1,
             "isVisible":1
         },
         {
-            "goodsGroupID":2,
-            "goodsGroupCode":"S",
-            "goodsGroupLocalInfo":"บริการ",
-            "goodsGroupGlobalInfo":"Services",   
+            "cateofgoodsID":2,
+            "cateofgoodsCode":"S",
+            "cateofgoodsLocalInfo":"บริการ",
+            "cateofgoodsGlobalInfo":"Services",   
             "isActive":1,
             "isVisible":1
         }
     ]
-       res.status(200).json(goodsgroups) 
+       res.status(200).json(cateofgoods) 
 });
+
+
 
 app.get('/typeofgoods',(req,res,next)=>{
     let typeofgoods=[
@@ -59,8 +62,8 @@ app.get('/typeofgoods',(req,res,next)=>{
         {
             "typeOfGoodsID":2,
             "typeOfGoodsCode":"S",
-            "typeOfGoodsLocalInfo":"สินค้า/SET (สามารถนำเอาสินค้าอื่น ๆเข้าร่วมใน SET ได้เช่น ตั๋ว,แลนด์,บริการ เหมาะกับธุรกิจทัวร์)",
-            "typeOfGoodsLocalInfo":"สินค้า/SET (สามารถนำเอาสินค้าอื่น ๆเข้าร่วมใน SET ได้เช่น ตั๋ว,แลนด์,บริการ เหมาะกับธุรกิจทัวร์)",
+            "typeOfGoodsLocalInfo":"สินค้า/SET (สามารถนำเอาสินค้าอื่น ๆเข้าร่วมใน SET ได้เช่น ตั๋ว,แลนด์,บริการ เหมาะกับธุรกิจทัวร์ และควรบังคับให้ไม่นับ Stock เพื่อให้ไปเช็คนับในสินค้าที่อยุ่ใน SET แทน)",
+            "typeOfGoodsLocalInfo":"สินค้า/SET (สามารถนำเอาสินค้าอื่น ๆเข้าร่วมใน SET ได้เช่น ตั๋ว,แลนด์,บริการ เหมาะกับธุรกิจทัวร์ และควรบังคับให้ไม่นับ Stock เพื่อให้ไปเช็คนับในสินค้าที่อยุ่ใน SET แทน)",
             "isActive":1,
             "isVisible":1
         },       
@@ -91,6 +94,8 @@ app.get('/typeofgoods',(req,res,next)=>{
     ]
        res.status(200).json(typeofgoods)     
 });
+
+
 
 app.get('/goods',(req,res,next)=>{
     let goods=[
