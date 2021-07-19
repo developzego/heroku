@@ -23,7 +23,28 @@ function addDate(day){
     return date
 }
 
-
+aap.get('/sectionofgoods'),(req,res,next)=>{
+        //ลักษณะข้อมูลใหม่ที่ต้องการทำให้ตรงกับโจทย์
+        {
+            "cateofgoodsID":1,
+            "cateofgoodsCode":"G",
+            "cateofgoodsLocalInfo":"สินค้า  ",
+            "cateofgoodsGlobalInfo":"Goods",   
+            "isActive":1,
+            "isVisible":1
+        },
+        {
+            "cateofgoodsID":2,
+            "cateofgoodsCode":"S",
+            "cateofgoodsLocalInfo":"บริการ",
+            "cateofgoodsGlobalInfo":"Services",   
+            "isActive":1,
+            "isVisible":1
+        }
+    ]
+       res.status(200).json(cateofgoods) 
+    
+});
 
 app.get('/categoryofgoods',(req,res,next)=>{
     let cateofgoods=[
