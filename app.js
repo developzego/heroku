@@ -24,9 +24,64 @@ function addDate(day){
 }
 
 
+app.get('/goodsgroup',(req,res,next)=>{
+    let typeofgoods=[
+        {
+            "goodsGroupID":1,
+            "goodsGroupCode":"G",
+            "goodsGroupLocalInfo":"สินค้า",
+            "goodsGroupGlobalInfo":"Goods",   
+            "isActive":1,
+            "isVisible":1
+        },
+        {
+            "goodsGroupID":2,
+            "goodsGroupCode":"S",
+            "goodsGroupLocalInfo":"บริการ",
+            "goodsGroupGlobalInfo":"Services",   
+            "isActive":1,
+            "isVisible":1
+        }
+    ]
+});
+
+app.get('/subtypeofgoods',(req,res,next)=>{
+    let typeofgoods=[
+        {
+            "typeOfGoodsID":1,
+            "typeOfGoodsCode":"I",
+            "typeOfGoodsLocalInfo":"สินค้าทั่วไป",
+            "typeOfGoodsLocalInfo":"สินค้าทั่วไป"           
+        },
+        {
+            "typeOfGoodsID":2,
+            "typeOfGoodsCode":"G",
+            "typeOfGoodsLocalInfo":"สินค้า/กรุ๊ป",
+            "typeOfGoodsLocalInfo":"สินค้า/กรุ๊ป"           
+        },
+        {
+            "typeOfGoodsID":3,
+            "typeOfGoodsCode":"L",
+            "typeOfGoodsLocalInfo":"สินค้า LOT",
+            "typeOfGoodsLocalInfo":"สินค้า LOT"           
+        },
+        {
+            "typeOfGoodsID":4,
+            "typeOfGoodsCode":"S",
+            "typeOfGoodsLocalInfo":"สินค้า SERIAL",
+            "typeOfGoodsLocalInfo":"สินค้า SERIAL"           
+        }
+    ]
+});
+
+
 app.get('/',verify, (req, res, next) => {
     res.status(200).json({"result":"สวัสดี น้องแฮม this is api"})
 });
+
+
+appget('/'
+
 
 //app.get('/data/',verify, (req, res, next) => {
 //    res.status(200).json([{"id":1,"name":"dev1"},{"id":2,"name":"dev2"},{"id":3,"name":"dev3"}])
