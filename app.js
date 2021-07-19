@@ -25,7 +25,7 @@ function addDate(day){
 
 
 app.get('/goodsgroup',(req,res,next)=>{
-    let typeofgoods=[
+    let goodsgroups=[
         {
             "goodsGroupID":1,
             "goodsGroupCode":"G",
@@ -43,6 +43,7 @@ app.get('/goodsgroup',(req,res,next)=>{
             "isVisible":1
         }
     ]
+       res.status(200).json(goodsgroups) 
 });
 
 app.get('/subtypeofgoods',(req,res,next)=>{
@@ -51,27 +52,45 @@ app.get('/subtypeofgoods',(req,res,next)=>{
             "typeOfGoodsID":1,
             "typeOfGoodsCode":"I",
             "typeOfGoodsLocalInfo":"สินค้าทั่วไป",
-            "typeOfGoodsLocalInfo":"สินค้าทั่วไป"           
+            "typeOfGoodsLocalInfo":"สินค้าทั่วไป",
+            "isActive":1,
+            "isVisible":1
         },
         {
             "typeOfGoodsID":2,
             "typeOfGoodsCode":"G",
             "typeOfGoodsLocalInfo":"สินค้า/กรุ๊ป",
-            "typeOfGoodsLocalInfo":"สินค้า/กรุ๊ป"           
+            "typeOfGoodsLocalInfo":"สินค้า/กรุ๊ป",
+            "isActive":1,
+            "isVisible":1
         },
         {
             "typeOfGoodsID":3,
             "typeOfGoodsCode":"L",
             "typeOfGoodsLocalInfo":"สินค้า LOT",
-            "typeOfGoodsLocalInfo":"สินค้า LOT"           
+            "typeOfGoodsLocalInfo":"สินค้า LOT",
+            "isActive":1,
+            "isVisible":1
         },
         {
             "typeOfGoodsID":4,
             "typeOfGoodsCode":"S",
             "typeOfGoodsLocalInfo":"สินค้า SERIAL",
-            "typeOfGoodsLocalInfo":"สินค้า SERIAL"           
+            "typeOfGoodsLocalInfo":"สินค้า SERIAL",
+            "isActive":1,
+            "isVisible":1
         }
     ]
+       res.status(200).json(typeofgoods)     
+});
+
+app.get('/goods',(req,res,next)=>{
+    let goods=[
+        {
+            "goodsID":1
+        }
+    ]
+       res.status(200).json(goods)         
 });
 
 
