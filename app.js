@@ -46,7 +46,7 @@ app.get('/goodsgroup',(req,res,next)=>{
        res.status(200).json(goodsgroups) 
 });
 
-app.get('/subtypeofgoods',(req,res,next)=>{
+app.get('/typeofgoods',(req,res,next)=>{
     let typeofgoods=[
         {
             "typeOfGoodsID":1,
