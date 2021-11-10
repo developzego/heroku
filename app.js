@@ -17,62 +17,10 @@ app.post('/post',(req, res, next)=>{
 })
 
 
-function addDate(day){ 
-    let date = new Date()
-    date.setDate(date.getDate() + day)
-    return date
-}
-
-aap.get('/sectionofgoods'),(req,res,next)=>{
-
-       res.status(200).json({"result":"สวัสดี น้องแฮม this is api"}) 
-    
-});
-
-app.get('/categoryofgoods',(req,res,next)=>{
-
-       res.status(200).json({"result":"สวัสดี น้องแฮม this is api"}) 
-});
-
-
-
-app.get('/typeofgoods',(req,res,next)=>{
-
-       res.status(200).json({"result":"สวัสดี น้องแฮม this is api"})     
-});
-
-
-
-app.get('/goods',(req,res,next)=>{
-    let goods=[
-        {
-            "goodsID":1
-        }
-    ]
-       res.status(200).json(goods)         
-});
-
-
 app.get('/',verify, (req, res, next) => {
     res.status(200).json({"result":"สวัสดี น้องแฮม this is api"})
 });
 
-
-app.get('/producttemplate', (req, res, next) => {
-  
-    res.status(200).json({"result":"สวัสดี น้องแฮม this is api"})
-});
-
-
-
-app.get('/data/',verify, (req, res, next) => {  
-    res.status(200).json({"result":"สวัสดี น้องแฮม this is api"})
-});
-
-app.get('/invoice/', (req, res, next) =>{
-    res.status(200).json([{"id":1}])
-    
-});
 
 app.listen(process.env.PORT || 3000, 
     () => console.log("Server is running..."));
